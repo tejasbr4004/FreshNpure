@@ -1,0 +1,329 @@
+@import url('https://fonts.googleapis.com/css2?family-Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
+body{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: "poppins",sans-serif;
+    /* background-color: rgb(26, 255, 0); */
+    background-color: #e3ebe0;
+}
+
+.image{
+    background-color: transparent;
+    height: 100px;
+    width:100px;
+    transform: scale(2);
+    padding-left: 15px;
+    margin-right:10px ;
+}
+
+.navbar .container-fluid a{
+    width: 100%;
+    display: flex;
+    justify-content: center;   
+  
+}
+.container-fluid{
+    position:sticky ;
+}
+.nav-link:hover{
+    background-color: #99f899;
+}
+.main{
+    position:relative ;
+    top: 200px;
+}
+
+.cards{
+    display:flex;
+    margin-top: 50px;
+    justify-content: space-around;
+    background-size: contain;
+    object-fit: contain;
+    
+}
+.card{
+
+
+ object-fit: contain;
+ text-align: center;
+ transition: ease 0.8s;
+ border-radius: 0%;
+ width: 19rem;
+ border-radius: 10px;
+ box-shadow: 3px 3px 10px 1px rgb(151, 220, 158);
+}
+/* .card .btn{
+    margin-top:10px;
+} */
+.card:hover{
+    border: 1.5px solid rgb(0, 255, 0);
+    transform: scale(0.95);
+  
+  }
+#con{
+    position: sticky;
+}
+.card span{
+    text-decoration: line-through;
+}
+.card .card-body{
+    position:absolute;
+    left:160px;
+    top:35px;
+    
+}
+.card .card-body .btn{
+    width:80px;
+    height:40px;
+}
+.card .card-title{
+    position: relative;
+    font-weight: 700;
+   
+}
+.card .card-img-top {
+    position: relative;
+    top:4px;
+    width:170px;
+    height:150px;
+}
+
+@media  screen and (max-width:950px) {
+    
+    .cards{
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+    }
+    .card{
+        margin-bottom: 15px;
+    }
+}
+@media  screen and (max-width:340px) {
+    
+    #cards1{
+        width: 18rem;
+        height: 15rem;
+    }
+    #cards1 .card-title{
+        top: 12px;
+    }
+    #cards2{
+        width: 18rem;
+        height: 17rem;
+    }
+    #cards2 .card-title{
+        top: 12px;
+    }
+    #cards3{
+        width: 18rem;
+        height: 14rem;
+    }
+    #cards3 .card-title{
+        top: 12px;
+    }
+    #cards4{
+        width: 18rem;
+        height: 14rem;
+    }
+    #cards4 .card-title{
+        top: 12px;
+    }
+    #cards5{
+        width: 18rem;
+        height: 14rem;
+    }
+    #cards5 .card-title{
+        top: 12px;
+    }
+    #cards6{
+        width: 18rem;
+        height: 14rem;
+    }
+    #cards6 .card-title{
+        top: 12px;
+    }
+}
+
+footer{
+    margin-top: 41px;
+     bottom: 0px;
+     width: 100%;
+     background-color: rgb(0, 174, 0);
+  }
+  .main-content{
+      display: flex;
+  }
+  .main-content .box{
+      flex-basis: 50%;
+      padding: 10px 20px;
+  }
+  .box h2{
+      font-size: 1.125rem;
+      font-weight: 600;
+      text-transform: uppercase;
+  }
+  .box .content{
+      margin: 20px 0 0 0;
+      position: relative;
+  }
+  .box .content:before{
+      position: absolute;
+      content: '';
+      top: -10px;
+      height: 2px;
+      width: 100%;
+      background:  rgb(0, 174, 0);;
+  }
+  .box .content:after{
+      position: absolute;
+      content: '';
+      height: 2px;
+      width: 15%;
+      background: yellow;
+      top:-10px;
+  }
+  
+  .left .content .list a:hover{
+      list-style: none;
+    text-decoration: underline;
+    text-decoration-color: white;
+    text-decoration-thickness: 3px;
+    transition: 1s;
+  }
+  .left .content .list a{
+      list-style: none;
+    text-decoration: none;
+   
+  }
+  .center .content a{
+      text-decoration: none;
+  }
+  .center .content .place a span:hover{
+      text-decoration: underline;
+    text-decoration-color: white;
+    text-decoration-thickness: 3px;
+    transition: 1s;
+  }
+  .center .content .email a span:hover{
+      text-decoration: underline;
+    text-decoration-color: white;
+    text-decoration-thickness: 3px;
+    transition: 1s;
+  }
+  
+  
+  .right .content .social{
+      margin: 10px 0 0px 0;
+  }
+  .right .content .social a span{
+      height: 40px;
+      width: 40px;
+      background: rgb(0, 174, 0);
+      line-height: 40px;
+      text-align: center;
+      font-size: 18px;
+      border-radius: 5px;
+      transition: 1s;
+      color: white;
+      margin: 6px;
+      padding: 6px;
+  }
+  .right .content .social span{
+      margin: 2px;
+      padding: 2px;
+  }
+  .right .content .social a span:hover{
+     
+      height: 100px;
+      width: 75px;
+      border-radius: 5px;
+      background-color: #85ee3a;
+  }
+  .right .content .phone span{
+      color: white;
+  }
+  .right .content .phone span:hover{
+      text-decoration: underline;
+    text-decoration-color: white;
+    text-decoration-thickness: 3px;
+    transition: 1s;
+  }
+  .center .content .bi{
+      font-size: 1.4375rem;
+      background: #1a1a1a;
+      height:45px;
+      width: 45px;
+      line-height: 45px;
+      text-align: center;
+      border-radius:50%;
+      transition: 1s;
+      cursor: pointer;
+  }
+  .center .content .bi:hover{
+      background-color: #85ee3a;
+  }
+  .center .content .text{
+      font-size: 1.0625rem;
+      font-weight: 500;
+      padding-left: 10px;
+  }
+  .center .content .place,.center .content .email{
+      margin:5px 0;
+  }
+  
+  .right .content .phone .bi{
+      font-size: 1.4375rem;
+      background: #1a1a1a;
+      height:45px;
+      width: 45px;
+      line-height: 45px;
+      text-align: center;
+      border-radius:50%;
+      transition: 1s;
+      cursor: pointer;
+  }
+  .right .content .phone .bi:hover{
+      background-color: #85ee3a;
+  }
+  
+  .right .content .phone{
+      width: 100%;
+      font-size: 1.0625rem;
+      background: rgb(0, 174, 0);
+      padding-left: 10px;
+      /* border: 1px solid green; */
+      height: 35px;
+  }
+  .bottom center{
+      padding: 5px;
+      font-size: 0.9375rem;
+      background: green;
+  }
+  .bottom center span{
+      color:white
+  }
+  .bottom center a{
+      color: yellow;
+      text-decoration: none;
+  }
+  .bottom center a:hover{
+     text-decoration: underline;
+  }
+  
+  @media  screen and (max-width:900px) {
+      footer{
+          position: relative;
+          bottom: 0px;
+      }
+      .main-content{
+          flex-wrap: wrap;
+          flex-direction: column;
+      }
+      .main-content .box{
+          margin: 5px 0;
+      }
+  }

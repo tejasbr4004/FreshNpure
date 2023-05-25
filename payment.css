@@ -1,0 +1,86 @@
+*{padding:0; margin:0; box-sizing: border-box; font-family:sans-serif;}
+header{
+	width: 100vw;
+	min-height: 100vh;
+	background:linear-gradient(rgb(70, 240, 70),rgb(192, 245, 192));
+	font-size: 1.2rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.container{
+	/* background: rgb(225, 243, 219); */
+	background: linear-gradient(rgb(195, 243, 195),rgb(223, 244, 223));
+	max-width: 800px;
+	min-height: 500px;
+	display: flex;
+	justify-content:space-between;
+	align-items: flex-start;
+	padding: 0.5rem 1.5rem;
+}
+.container:hover{
+	box-shadow: 3px 3px 18px 2px green;
+	
+}
+.left{
+	flex-basis: 50%;
+}
+.right{
+	flex-basis: 50%;
+}
+form{
+	padding: 1rem;
+}
+
+h3{
+	margin-top: 1rem;
+	color:green;
+	}
+
+form input[type="text"]{
+	width: 100%;
+	padding: 0.5rem 0.7rem;
+	margin: 0.5rem 0;
+	outline: none;
+}
+
+#zip{
+	display: flex;
+	margin-top: 0.5rem;
+}
+#zip select{
+	padding: 0.5rem 0.7rem;
+}
+#zip input[type="number"]{
+	padding: 0.5rem 0.7rem;
+	margin-left: 5px;	
+}
+input[type="submit"]{
+	width: 100%;
+	padding: 0.7rem 1.5rem;
+	background: rgb(12, 242, 12);
+	color: white;
+	border: none;
+	outline: none;
+	margin-top: 1rem;
+	cursor: pointer;
+}
+
+input[type="submit"]:hover{
+	background: green;
+}
+
+
+@media only screen and (max-width: 770px){
+	.container{
+		flex-direction: column;
+	}
+	body{
+		overflow-x: hidden;
+	}
+	.container:hover{
+		box-shadow: 3px 3px 18px 2px green inset;
+		
+	}
+}
+
